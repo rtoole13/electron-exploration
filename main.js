@@ -1,13 +1,16 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, Menu } = require('electron')
 const path = require('path')
+const shell = require('electron').shell
 
 function createWindow(){
+    //----MAIN WINDOW----//
     // Create browser window
     let win = new BrowserWindow({
         width: 800,
         height: 600,
         webPreferences: {
-            preload: path.join(__dirname, 'preload.js')
+            preload: path.join(__dirname, 'preload.js'),
+            nodeIntegration: true
         }
     })
 
@@ -24,6 +27,39 @@ function createWindow(){
         // when you should delete the corresponding element.
         win = null
     })
+
+    //----MENU----//
+    let menu = Menu.buildFromTemplate([
+        {
+            label: 'Library'
+        },
+        {
+            label: 'Streams'
+        },
+        {
+            label: 'Social'
+        },
+        {
+            label: 'Account'
+        },
+        {
+            label: 'Settings'
+        },
+        {
+            label: 'Help',
+            click(){
+                shell.openExternal('http://github.com/rtoole13')
+            }
+        },
+        {
+            label: 'Exit',
+            click(){
+                app.quit()
+            },
+            accelerator: 'CmdOrCtrl+Z'
+        },
+    ])
+    Menu.setApplicationMenu(menu);
 }
 
 // This method will be called when Electron has finished
