@@ -1,0 +1,64 @@
+.social-list {
+    align-self: left;
+    border-bottom: 1px solid hsl(0,0%,88%);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.social-list-item {
+    width: 100%;
+}
+
+.social-list-item-header {
+    display:inline-block;
+    font-style: normal;
+    width:75%;
+}
+
+.friend-remove-button {
+    display: inline-block;
+    padding: .2rem;
+    padding-left: 0.2rem; /*calc(2rem + 16px + .5rem); /* padding + icon + magic */
+    line-height: 2;
+    text-align: center;
+    font: inherit;
+    font-size: 8px;
+    color: inherit;
+    border: none;
+    background-color: transparent;
+    cursor: default;
+    outline: none;
+}
+
+.friend-remove-button:hover {
+  background-color: hsla(0,0%,0%,.1);
+}
+
+.friend-remove-button:active {
+  background-color: hsla(0,0%,0%,.5);
+}
+
+.social-list-section {
+    display: inline-block;
+    width: 35%;
+    /*white-space: nowrap;
+
+    overflow-x: hidden;
+    */
+    margin: 10px;
+    border-right: 1px solid hsl(0,0%,88%);
+}
+
+.social-main-window {
+    position:fixed;
+    display: inline-block;
+    height: 100%;
+}
+
+.social-main-window > p {
+    font: inherit;
+    font-size: 15px;
+    color: inherit;
+    font-weight: bold;
+}

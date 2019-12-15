@@ -16,7 +16,6 @@ function handleSectionTrigger (event) {
     // Display the current section
     const sectionId = `${event.target.dataset.section}-section`
     document.getElementById(sectionId).classList.add('is-shown')
-    console.log(document.getElementById(sectionId))
 
     // Save currently active button in localStorage
     const buttonId = event.target.getAttribute('id')
@@ -25,7 +24,6 @@ function handleSectionTrigger (event) {
 
 function hideAllSectionsAndDeselectButtons () {
     const sections = document.querySelectorAll('.js-section.is-shown')
-    console.log(sections)
     Array.prototype.forEach.call(sections, (section) => {
         section.classList.remove('is-shown')
     })

@@ -1,6 +1,6 @@
 
 .app-nav {
-  width: 340px;
+  width: 200px;
   overflow-x: hidden;
   overflow-y: auto;
   color: var(--color-subtle);
@@ -10,12 +10,50 @@
 }
 
 .app-nav-item {
-    padding: 8px 8px 8px 32px;
+    padding: 0px 0px 0px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
+}
+
+/*Nav bar buttons*/
+.nav-button {
+  display: block;
+  width: 100%;
+  padding: .2rem;
+  padding-left: 0.2rem; /*calc(2rem + 16px + .5rem); /* padding + icon + magic */
+  line-height: 2;
+  text-align: left;
+  font: inherit;
+  font-size: 13px;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: default;
+  outline: none;
+}
+.nav-button:hover,
+.nav-button:focus:not(.is-selected) {
+  background-color: hsla(0,0%,0%,.1);
+}
+.nav-button.is-selected {
+  background-color: var(--color-accent);
+}
+.nav-button.is-selected,
+.nav-button.is-selected em {
+  color: #fff;
+}
+.nav-button.is-selected:focus {
+  opacity: .8;
+}
+
+.nav-button em {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--color-strong);
+  pointer-events: none; /* makes it invisible to clicks */
 }
 
 /* When you mouse over the navigation links, change their color */

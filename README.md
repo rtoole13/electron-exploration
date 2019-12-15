@@ -18,8 +18,11 @@ Selection of saved streams. Basically iframes to urls of favorite streamers
 
 #### Account
 Adjust profile pic
+    - new window
 Adjust username
+    - new window
 change password
+    - new window
 Location
 Hosted streams (option to add stream(s) tied to you. Users can add your stream to their stream
 page by the social tab)
