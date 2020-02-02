@@ -1,7 +1,4 @@
-# electron-exploration
-Fiddling with electron
-
-# e-sports prototype
+# e-sports GUI prototype
 
 ## GUI
 vertical taskbar on the left, running the height of the main window, link to each window
@@ -30,21 +27,18 @@ page by the social tab)
 #### Social
 Friends list and following list are panels occupying 30% of the horizontal real estate, stacked on
 top of one another.
-***NOTE*** Each occupies 50% of the entire real estate when no user is selected
-           On select of a friend/follower, that user's page is displayed, occupying 70% of space,
-           friends list and following list are shifting into their vertical orientation on left.
-*Friends list*
- - Add Friends
- - Remove Friends
- - Friends who've accepted a request show up in list. Can invite to watch an event together
+- ***NOTE*** Each occupies 50% of the entire real estate when no user is selected. On select of a friend/follower, that user's page is displayed, occupying 70% of space, friends list and following list are shifting into their vertical orientation on left.
+- *Friends list*
+    - Add Friends
+    - Remove Friends
+    - Friends who've accepted a request show up in list. Can invite to watch an event together
 
-*Following list*
- - Follow folks, friends or otherwise. A follow is viewable on externally viewed user page
 
- *Main window*
- - Display selected user's outward facing page. Displays profile pic, basic info shared, any streams
-   follower count (can select to see who), following count (can select to see who), whether online,
-   whether streaming, frequented streams or games on app.
+- *Following list*
+    - Follow folks, friends or otherwise. A follow is viewable on externally viewed user page
+
+- *Main window*
+    - Display selected user's outward facing page. Displays profile pic, basic info shared, any streams, follower count (can select to see who), following count (can select to see who), whether online, whether streaming, frequented streams or games on app.
 
 #### Settings
 Display version number
